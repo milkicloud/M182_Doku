@@ -1,4 +1,4 @@
-# Beschreibung der VMs
+# LAB-Umgebung
 
 ## Domain Controller
 
@@ -16,6 +16,13 @@ password: vagrant
 - Velociraptor
 - WinRAR (64-bit)
 - Wireshark 64-bit
+
+- Server Manager:
+    - AD DS
+    - DNS
+    - File and Storage Services
+    - IIS
+    - WSUS
 
 ## wef
 
@@ -39,6 +46,12 @@ password: vagrant
 username: vagrant
 password: vagrant
 
+### Software
+
+- Fleet Kolide
+- Kibana
+- Elasticsearch
+
 # Netzwerk
 
 ```plantuml
@@ -47,14 +60,17 @@ password: vagrant
 object DC
 DC : hostname: dc
 DC : ip: 10.0.2.11
+DC : host-only-ip: 192.168.38.102
 
 object WEF
 WEF : hostname: wef
 WEF : ip: 10.0.2.12
+WEF : host-only-ip: 192.168.38.103
 
 object Logger
 Logger : hostname: logger
 Logger : ip: 10.0.2.5
+Logger : host-only-ip: 192.168.38.105
 
 @enduml
 ```
