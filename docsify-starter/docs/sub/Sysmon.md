@@ -10,4 +10,4 @@ Die Aktuelle Version von Sysmon ist v14.13.
 
 Um Sysmon auf einer Windows-Machine zu installieren braucht man nur die Sysmon64.exe herunterzuladen und diese mit dem Parameter -i auszuführen.
 Optional kann man dabei auch ein Konfigurations-File mitgeben.
-
+Sysmon gehört zu den Sysinternals und kann direkt von Microsoft heruntergeladen werden.
